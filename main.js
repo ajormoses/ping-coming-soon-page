@@ -31,4 +31,8 @@ function error(element, msg) {
 
 function success(element) {
   element.style.border = "1px solid hsl(223, 87%, 63%)";
+  const parent = element.parentElement;
+  const p = parent.querySelector(".text");
+  p.style.display = "none";
+  p.innerHTML = "";
 }
